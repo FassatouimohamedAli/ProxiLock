@@ -1,0 +1,88 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#f4f7f9"
+    android:padding="24dp">
+
+    <!-- Titre -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ProxiLock"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1E88E5"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Historique des événements -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Historique des événements"
+                android:textColor="#333"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tv_lock_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verrouillages : 0"
+                android:textColor="#555"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_unlock_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Déverrouillages : 0"
+                android:textColor="#555"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Sensibilité actuelle -->
+    <TextView
+        android:id="@+id/tv_sensitivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sensibilité actuelle :"
+        android:textColor="#666"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Bouton Activer/Désactiver -->
+    <Button
+        android:id="@+id/btn_toggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activer ProxiLock"
+        android:backgroundTint="#1E88E5"
+        android:textColor="#fff"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"/>
+
+</LinearLayout>

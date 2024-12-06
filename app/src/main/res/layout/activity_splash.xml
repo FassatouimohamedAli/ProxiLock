@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/splash_background">
+
+    <!-- Logo avec animation -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_launcher"
+        android:contentDescription="@string/app_logo" />
+
+    <!-- CardView contenant le nom du groupe -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#ffffff">
+
+        <TextView
+            android:id="@+id/group_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fassatoui Med Ali, Maram Ferjani,Wael Ferjani"
+            android:textSize="10sp"
+            android:textColor="#1E88E5"
+            android:textStyle="bold"
+            android:gravity="center" />
+           />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Texte secondaire -->
+    <TextView
+        android:id="@+id/tagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Rejoignez-nous dans l'aventure technologique !"
+        android:textSize="12sp"
+        android:textColor="#1E88E5"
+        android:gravity="center" />
+
+</LinearLayout>
